@@ -1,0 +1,20 @@
+name: type_inference_tinker
+description: >
+  Tinker with Dart Type Inference.
+authors:
+  - Matan Lurey <matanl@google.com>
+homepage: https://github.com/matanlurey/type-inference-tinker
+
+environment:
+  sdk: ">=2.0.0-dev <2.0.0"
+
+web:
+  compiler:
+    # DDC crashes trying to compile pkg/analyzer.
+    debug: dart2js #dartdevc
+
+dependencies:
+  analyzer: ^0.30.0
+
+dev_dependencies:
+  test: ^0.12.0
