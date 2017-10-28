@@ -1,0 +1,57 @@
+<!--
+// Copyright 2017, Google Inc.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <title>Type Inference Tinker</title>
+    <meta name="description" content="Type Inference Tinker">
+    <link rel="icon" href="bird.svg">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Noto", sans-serif;
+            min-height: 100vh;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+        }
+        .editor {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #preview {
+            flex: 1;
+            font-family: monospace;
+            font-size: 3em;
+            width: 100%;
+            background: #333;
+            padding: 5px;
+            color: #FFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .editor #code {
+            display: block;
+            font-family: monospace;
+            padding: 5px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="editor">
+  <div id="preview">Loading...</div>
+  <input id="code" type="text" />
+</div>
+<script src="main.dart.js"></script>
+</body>
+</html>
